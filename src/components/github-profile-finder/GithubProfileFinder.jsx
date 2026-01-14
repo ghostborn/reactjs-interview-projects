@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import User from "./User";
+import "./style.css";
 
 export default function GithubProfileFinder() {
   const [userName, setUserName] = useState("ghostborn");
@@ -40,8 +41,8 @@ export default function GithubProfileFinder() {
   }
 
   return (
-    <div className="">
-      <div className="">
+    <div className="githb-profile-container">
+      <div className="input-wrapper">
         <input
           type="text"
           name="search-by-username"
