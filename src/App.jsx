@@ -7,6 +7,10 @@ import Accordian from "./components/accordian/Accordian";
 import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider/ImageSlider";
 import QRCodeGenerator from "./components/qr-code-generator/QRCodeGenerator";
+import LightDarkMode from "./components/light-dark-mode/LightDarkMode";
+import RandomColor from "./components/random-color/RandomColor";
+import LoadMoreDaa from "./components/load-more-data/LoadMoreData";
+import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 
 function App() {
   return (
@@ -21,7 +25,11 @@ function App() {
         page={"1"}
         limit={"10"}
       />*/}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator />*/}
+      {/* <LightDarkMode />*/}
+      {/* <RandomColor />*/}
+      {/* <LoadMoreDaa />*/}
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </div>
   );
 }
