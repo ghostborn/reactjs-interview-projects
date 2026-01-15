@@ -11,6 +11,8 @@ import LightDarkMode from "./components/light-dark-mode/LightDarkMode";
 import RandomColor from "./components/random-color/RandomColor";
 import LoadMoreDaa from "./components/load-more-data/LoadMoreData";
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
+import SearchAutoComplete from "./components/search-autocomplete/SearchAutocomplete";
+import UseFetchHookTest from "./components/use-fetch/test";
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
       {/* <LightDarkMode />*/}
       {/* <RandomColor />*/}
       {/* <LoadMoreDaa />*/}
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />*/}
+      {/* <SearchAutoComplete />*/}
+      <UseFetchHookTest />
     </div>
   );
 }

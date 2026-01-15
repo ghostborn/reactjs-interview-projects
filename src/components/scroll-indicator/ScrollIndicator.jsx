@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { throttle } from "lodash";
 import "./scroll.css";
 
 export default function ScrollIndicator({ url }) {
@@ -27,7 +28,11 @@ export default function ScrollIndicator({ url }) {
     fetchData(url);
   }, [url]);
 
-  function handleScrollPercentage() {
+  // function handleScrollPercentage() {
+
+  // }
+
+  const handleScrollPercentage = throttle(() => {
     console.log(
       document.body.scrollTop, // 滚动距离
       document.documentElement.scrollTop, //滚动距离
@@ -46,7 +51,14 @@ export default function ScrollIndicator({ url }) {
 
     // 计算滚动进度百分比（滚动距离 / 可滚动总高度 * 100）
     setScrollPercentage((howMuchScrolled / height) * 100);
-  }
+  }, 16);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollPercentage);
+    return () => {
+      window.removeEventListener("scroll", handleScrollPercentage);
+    };
+  }, []);
 
   if (errorMessage) {
     return <div>Error ! {errorMessage}</div>;
@@ -55,11 +67,14 @@ export default function ScrollIndicator({ url }) {
     return <div>Loading data ! Please wait</div>;
   }
   return (
-    <>
+    <div>
       <div className="top-container">
         <h1>Custom Scroll Indicator</h1>
         <div className="scroll-progress-tracking-container">
-          <div className="current-progress-bar"></div>
+          <div
+            className="current-progress-bar"
+            style={{ width: `${scrollPercentage}%` }}
+          ></div>
         </div>
       </div>
       <div className="data-container">
@@ -69,6 +84,6 @@ export default function ScrollIndicator({ url }) {
           <p>No products found</p>
         )}
       </div>
-    </>
+    </div>
   );
 }
