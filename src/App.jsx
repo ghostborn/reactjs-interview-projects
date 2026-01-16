@@ -17,6 +17,8 @@ import StarRating from "./components/star-rating/StarRating";
 import ScrollToSection from "./components/scroll-to-somewhere/ScrollToSection";
 import ScrollToTopAndBottom from "./components/scroll-to-somewhere/ScrollToTopAndBottom";
 import UseWindowResizeTest from "./components/use-window-resize/test";
+import UseOnclickOutsideTest from "./components/use-outside-click/test";
+import TicTacToe from "./components/tic-tact-toe/TicTacToe";
 
 function App() {
   return (
@@ -41,7 +43,9 @@ function App() {
       {/* <StarRating noOfStars={5} />*/}
       {/* <ScrollToSection />*/}
       {/* <ScrollToTopAndBottom />*/}
-      <UseWindowResizeTest />
+      {/* <UseWindowResizeTest />*/}
+      {/* <UseOnclickOutsideTest />*/}
+      <TicTacToe />
     </div>
   );
 }
