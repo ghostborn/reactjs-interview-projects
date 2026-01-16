@@ -1,0 +1,9 @@
+.active {
+    color: #fff700;
+}
+inactive {
+    color: #000;
+}
+.FaStar {
+    transition: color 0.5s ease;
+}
