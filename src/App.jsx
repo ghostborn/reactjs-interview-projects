@@ -19,6 +19,7 @@ import ScrollToTopAndBottom from "./components/scroll-to-somewhere/ScrollToTopAn
 import UseWindowResizeTest from "./components/use-window-resize/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
 import TicTacToe from "./components/tic-tact-toe/TicTacToe";
+import DigitalClock from "./components/digital-clock";
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
       {/* <ScrollToTopAndBottom />*/}
       {/* <UseWindowResizeTest />*/}
       {/* <UseOnclickOutsideTest />*/}
-      <TicTacToe />
+      {/* <TicTacToe />*/}
+      <DigitalClock />
     </div>
   );
 }
