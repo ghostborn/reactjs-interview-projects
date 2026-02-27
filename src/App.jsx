@@ -21,6 +21,15 @@ import UseOnclickOutsideTest from "./components/use-outside-click/test";
 import TicTacToe from "./components/tic-tact-toe/TicTacToe";
 import DigitalClock from "./components/digital-clock";
 import TooltipTest from "./components/tooltip/test";
+import PaginationTest from "./components/pagination/test";
+import CountdownTimerTest from "./components/countdown-timer/test";
+import StepProgressBarTest from "./components/step-progress-bar/test";
+import RandomQuoteGenerator from "./components/random-quote-generator";
+import CurrencyConverter from "./components/currency-converter";
+import FilterProducts from "./components/filter-products";
+import TipCalculator from "./components/tip-calculator";
+import ProgressBar from "./components/progress-bar";
+import ButtonRippleEffect from "./components/button-ripple-effect";
 
 function App() {
   return (
@@ -49,7 +58,16 @@ function App() {
       {/* <UseOnclickOutsideTest />*/}
       {/* <TicTacToe />*/}
       {/* <DigitalClock />*/}
-      <TooltipTest />
+      {/* <TooltipTest />*/}
+      {/* <PaginationTest />*/}
+      {/* <CountdownTimerTest />*/}
+      {/* <StepProgressBarTest />*/}
+      {/* <RandomQuoteGenerator />*/}
+      {/* <CurrencyConverter />*/}
+      {/* <FilterProducts />*/}
+      {/* <TipCalculator />*/}
+      {/* <ProgressBar />*/}
+      <ButtonRippleEffect />
     </div>
   );
 }
