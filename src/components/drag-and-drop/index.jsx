@@ -65,21 +65,35 @@ function DragAndDropFeature() {
         </div>,
       );
     });
-    return todoListToRender
+    return todoListToRender;
   }
-  
-  if (loading) return <h1>Loading data! Please wait</h1>
-  
+
+  if (loading) return <h1>Loading data! Please wait</h1>;
+
   return (
     <div className="drag-and-drop-container">
       <h1>Drag and Drop</h1>
+      <div className="drag-and-drop-board">
+        <div
+          onDrop={(event) => onDrop(event, "wip")}
+          onDragOver={(event) => event.preventDefault()}
+          className="work-in-progress"
+        >
+          <h3>In Progress</h3>
+          <div className="todo-list-wrapper">{renderTodos().wip}</div>
+        </div>
 
+        <div
+          onDrop={(event) => onDrop(event, "completed")}
+          onDragOver={(event) => event.preventDefault()}
+          className="completed"
+        >
+          <h3>Completed</h3>
+          <div className="todo-list-wrapper">{renderTodos().completed}</div>
+        </div>
+      </div>
     </div>
-  )
-
-  
-  
-  
-  
-  
+  );
 }
+
+export default DragAndDropFeature;

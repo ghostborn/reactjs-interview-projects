@@ -30,6 +30,14 @@ import FilterProducts from "./components/filter-products";
 import TipCalculator from "./components/tip-calculator";
 import ProgressBar from "./components/progress-bar";
 import ButtonRippleEffect from "./components/button-ripple-effect";
+import DragAndDropFeature from "./components/drag-and-drop";
+import FileUpload from "./components/file-upload";
+import Quiz from "./components/quiz-app";
+import NestedComments from "./components/nested-comments";
+import PdfViewer from "./components/pdf-viewer";
+import DebounceApiCall from "./components/debounce-api-call";
+import SortData from "./components/sort-data";
+import GoogleOAuthLogin from "./components/google-oauth-login";
 
 function App() {
   return (
@@ -67,7 +75,15 @@ function App() {
       {/* <FilterProducts />*/}
       {/* <TipCalculator />*/}
       {/* <ProgressBar />*/}
-      <ButtonRippleEffect />
+      {/* <ButtonRippleEffect />*/}
+      {/* <DragAndDropFeature />*/}
+      {/* <FileUpload />*/}
+      {/* <Quiz/>*/}
+      <NestedComments />
+      {/* <PdfViewer />*/}
+      {/* <DebounceApiCall />*/}
+      {/* <GoogleOAuthLogin />*/}
+      {/* <SortData />*/}
     </div>
   );
 }
