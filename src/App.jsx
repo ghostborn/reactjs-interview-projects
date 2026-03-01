@@ -19,6 +19,8 @@ import ScrollToTopAndBottom from "./components/scroll-to-somewhere/ScrollToTopAn
 import UseWindowResizeTest from "./components/use-window-resize/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
 import TicTacToe from "./components/tic-tact-toe/TicTacToe";
+import menus from "./components/tree-view/data";
+import TreeView from "./components/tree-view/TreeView";
 
 function App() {
   return (
@@ -45,7 +47,8 @@ function App() {
       {/* <ScrollToTopAndBottom />*/}
       {/* <UseWindowResizeTest />*/}
       {/* <UseOnclickOutsideTest />*/}
-      <TicTacToe />
+      {/* <TicTacToe />*/}
+      <TreeView menus={menus} />
     </div>
   );
 }
