@@ -40,6 +40,8 @@ import PdfViewer from "./components/pdf-viewer";
 import DebounceApiCall from "./components/debounce-api-call";
 import SortData from "./components/sort-data";
 import GoogleOAuthLogin from "./components/google-oauth-login";
+import Weather from "./components/weather";
+import MovieApp from "./components/movie-app";
 
 function App() {
   return (
@@ -67,7 +69,7 @@ function App() {
       {/* <UseWindowResizeTest />*/}
       {/* <UseOnclickOutsideTest />*/}
       {/* <TicTacToe />*/}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} />*/}
       {/* <DigitalClock />*/}
       {/* <TooltipTest />*/}
       {/* <PaginationTest />*/}
@@ -82,11 +84,13 @@ function App() {
       {/* <DragAndDropFeature />*/}
       {/* <FileUpload />*/}
       {/* <Quiz/>*/}
-      <NestedComments />
+      {/* <NestedComments />*/}
       {/* <PdfViewer />*/}
       {/* <DebounceApiCall />*/}
       {/* <GoogleOAuthLogin />*/}
       {/* <SortData />*/}
+      {/* <Weather />*/}
+      <MovieApp />
     </div>
   );
 }
